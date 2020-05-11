@@ -1,3 +1,5 @@
+# Multi-stage job
+
 # Stage 1 - the build process
 FROM node as build-deps
 WORKDIR /usr/src/app
