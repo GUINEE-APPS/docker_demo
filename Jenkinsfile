@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             agent { 
                     node {
-                        label 'production'
+                        label 'ubuntu'
                     } 
                 }
             steps {
@@ -16,7 +16,7 @@ pipeline {
         stage('Deploy') {
             agent { 
                     node {
-                        label 'production'
+                        label 'ubuntu'
                     } 
                 }
             
