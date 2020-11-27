@@ -4,7 +4,6 @@
 FROM node as build-deps
 WORKDIR /usr/src/app
 COPY package.json yarn.lock ./
-#COPY yarn.lock yarn.lock ./
 RUN yarn
 COPY . ./
 RUN yarn build
